@@ -1,0 +1,35 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: var(--dark-blue);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: rem(56);
+  font-weight: 900;
+  line-height: rem(56);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: rem(32);
+  font-weight: 900;
+  line-height: rem(36);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: rem(24);
+  font-weight: 900;
+  line-height: rem(28);
+  text-transform: uppercase;
+}

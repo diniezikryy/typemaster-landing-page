@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: rem(55);
+  margin-bottom: rem(83);
+  max-height: rem(58);
+
+  img {
+    height: rem(40);
+  }
+
+  &__button {
+  }
+}

@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+.top {
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  &__left {
+    max-width: rem(445);
+    max-height: rem(312);
+    //margin-right: rem(125);
+    &--title {
+      padding-top: rem(60);
+    }
+
+    &--description {
+      margin-bottom: rem(40);
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      max-height: rem(58);
+    }
+
+    &--release {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-left: rem(40);
+    }
+  }
+
+  &__right {
+    left: 40%;
+
+    img {
+      max-width: rem(540);
+      max-height: rem(480);
+      background-size: cover;
+      border-radius: rem(15);
+    }
+  }
+}
