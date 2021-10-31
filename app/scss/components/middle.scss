@@ -1,0 +1,107 @@
+@use '../util' as *;
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(168);
+
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include breakpoint-down(small) {
+    margin-bottom: rem(111);
+  }
+
+  &__photos {
+    display: flex;
+
+    @include breakpoint-down(small) {
+      transform: translateX(rem(-50));
+    }
+
+    &--phone-keyboard {
+      background-image: url("../../../assets/desktop/image-phone-and-keyboard.jpg");
+      background-size: cover;
+      height: rem(480);
+      width: rem(255);
+      border-radius: rem(20);
+      margin-right: rem(24);
+      background-color: #f16718;
+      background-blend-mode: multiply;
+
+      @include breakpoint-down(medium) {
+        height: rem(320);
+      }
+
+      @include breakpoint-down(small) {
+        height: rem(193);
+        width: rem(129);
+      }
+    }
+
+    &--mouse-keyboard {
+      background-image: url("../../../assets/desktop/image-glass-and-keyboard.jpg");
+      background-size: cover;
+      height: rem(480);
+      width: rem(445);
+      border-radius: rem(20);
+
+      @include breakpoint-down(medium) {
+        height: rem(320);
+      }
+
+      @include breakpoint-down(small) {
+        height: rem(193);
+        width: rem(220);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    height: rem(265);
+    width: rem(255);
+
+    @include breakpoint-down(medium) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-height: rem(108);
+      width: 100%;
+      margin-top: rem(72);
+    }
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      max-height: none;
+      justify-content: flex-start;
+    }
+
+    &--title {
+      margin-bottom: 0;
+
+      @include breakpoint-down(small) {
+        min-width: rem(255);
+        min-height: rem(108);
+        text-align: center;
+        margin-bottom: rem(24);
+      }
+    }
+
+    &--desc {
+      max-height: rem(78);
+      max-width: rem(398);
+
+      @include breakpoint-down(small) {
+        min-width: rem(327);
+        min-height: rem(104);
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,15 +1,40 @@
 @use '../util' as *;
 
 .button {
-  background: var(--grey);
   padding: rem(16) rem(27);
   border-radius: rem(8);
+
+  @include breakpoint-down(small) {
+    padding: rem(11) rem(14);
+  }
 
   &__text {
     font-size: rem(16);
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
+    color: var(--white);
+  }
+
+  &__header {
+    padding: rem(16) rem(27);
+    border-radius: rem(8);
+    background: var(--grey);
     color: var(--dark-blue);
+
+    &:hover {
+      background: var(--dark-blue);
+      color: var(--white);
+    }
+  }
+
+  &__top {
+    padding: rem(16) rem(27);
+    border-radius: rem(8);
+    background: var(--dark-orange);
+
+    &:hover {
+      background: var(--light-orange);
+    }
   }
 }

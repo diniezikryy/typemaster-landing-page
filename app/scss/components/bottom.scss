@@ -1,0 +1,115 @@
+@use '../util' as *;
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include breakpoint-down(medium) {
+    justify-content: start;
+  }
+
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card {
+    height: rem(323);
+    width: rem(255);
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-down(medium) {
+      width: rem(339);
+      margin-right: rem(11);
+      margin-bottom: rem(72);
+    }
+
+    @include breakpoint-down(small) {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: rem(64);
+    }
+
+    &--compatible {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-down(small) {
+        align-items: center;
+        text-align: center;
+      }
+      .logo {
+        width: rem(65);
+        height: rem(65);
+        border-radius: rem(16);
+        background-color: var(--dark-orange);
+        background-image: url("../../../assets/shared/icon-compatible.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: rem(48);
+      }
+    }
+
+    &--bluetooth {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-down(small) {
+        align-items: center;
+        text-align: center;
+      }
+      .logo {
+        width: rem(65);
+        height: rem(65);
+        border-radius: rem(16);
+        background-color: var(--dark-orange);
+        background-image: url("../../../assets/shared/icon-bluetooth.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: rem(48);
+      }
+    }
+
+    &--battery {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-down(small) {
+        align-items: center;
+        text-align: center;
+      }
+      .logo {
+        width: rem(65);
+        height: rem(65);
+        border-radius: rem(16);
+        background-color: var(--dark-orange);
+        background-image: url("../../../assets/shared/icon-battery.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: rem(48);
+      }
+    }
+
+    &--light {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-down(small) {
+        align-items: center;
+        text-align: center;
+      }
+      .logo {
+        width: rem(65);
+        height: rem(65);
+        border-radius: rem(16);
+        background-color: var(--dark-orange);
+        background-image: url("../../../assets/shared/icon-light.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: rem(48);
+      }
+    }
+  }
+}

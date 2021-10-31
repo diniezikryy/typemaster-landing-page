@@ -1,44 +1,77 @@
 @use '../util' as *;
 
 .top {
+  overflow-x: hidden;
+  min-height: rem(480);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(30);
 
-  overflow: hidden;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+  }
 
   &__left {
-    max-width: rem(445);
-    max-height: rem(312);
-    //margin-right: rem(125);
+    height: rem(312);
+    width: rem(445);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint-down(small) {
+      height: rem(286);
+      width: rem(327);
+    }
+
     &--title {
-      padding-top: rem(60);
+      margin-bottom: rem(0);
+
+      @include breakpoint-down(small) {
+        font-size: rem(48);
+        line-height: rem(48);
+      }
     }
 
     &--description {
-      margin-bottom: rem(40);
+      padding-right: rem(20);
+      height: rem(78);
     }
 
     &--wrapper {
       display: flex;
       align-items: center;
-      max-height: rem(58);
-    }
+      height: rem(58);
 
-    &--release {
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-left: rem(40);
+      .top__left--release {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: rem(40);
+
+        @include breakpoint-down(small) {
+          margin-left: rem(20);
+        }
+      }
     }
   }
 
   &__right {
-    left: 40%;
+    min-height: rem(480);
+    min-width: rem(540);
+    margin-left: rem(125);
+    background-image: url("../../../assets/desktop/image-keyboard.jpg");
+    background-size: cover;
+    border-radius: rem(20);
 
-    img {
-      max-width: rem(540);
-      max-height: rem(480);
-      background-size: cover;
-      border-radius: rem(15);
+    @include breakpoint-down(medium) {
+      min-height: rem(425);
+      min-width: rem(478);
+      margin-left: rem(69);
+    }
+
+    @include breakpoint-down(small) {
+      margin-top: rem(64);
+      min-height: rem(331);
+      min-width: rem(372);
     }
   }
 }
