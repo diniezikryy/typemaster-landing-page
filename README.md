@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![./screenshot.jpg](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/diniezikryy/tlp)
-- Live Site URL: [Add live site URL here](https://tlp.pages.dev/)
+- Solution URL: [https://github.com/diniezikryy/tlp]()
+- Live Site URL: [https://tlp.pages.dev/]()
 
 ## My process
 
