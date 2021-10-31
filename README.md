@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot.png]
+![https://github.com/diniezikryy/tlp/blob/main/screenshot.png]
 
 ### Links
 
