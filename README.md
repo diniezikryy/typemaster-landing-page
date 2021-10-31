@@ -26,11 +26,12 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 Users should be able to:
 
--
+- View landing page for Typemaster Keyboard
 
 ### Screenshot
 
-![https://github.com/diniezikryy/tlp/blob/main/screenshot.png]
+![Design preview for the Typemaster pre-launch landing page
+ coding challenge](./screenshot.png)
 
 ### Links
 
@@ -47,7 +48,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Desktop-first workflow
 - SASS
 - Gulp
 
